@@ -3,13 +3,15 @@ on:
   schedule:
     - cron: '*/20 * * * *'
   workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Run script
-        env: {YGOSU_COOKIE: ${{ secrets.YGOSU_COOKIE }}}
+        env:
+          YGOSU_COOKIE: ${{ secrets.YGOSU_COOKIE }}
         run: |
           pip install requests beautifulsoup4
           python ygosu_analyzer.py
