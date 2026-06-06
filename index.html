@@ -1,0 +1,223 @@
+
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>아리송(야구) 실시간 MVP 랭킹</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+            body { background-color: #0b1320; background-image: radial-gradient(circle at 50% 0%, #162a45 0%, #0b1320 70%); color: #f8fafc; font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 40px; min-height: 100vh; }
+            .container { max-width: 1000px; margin: 0 auto; }
+            .header { text-align: center; margin-bottom: 30px; border-bottom: 2px dashed #334155; padding-bottom: 20px; position: relative; }
+            .header h1 { margin: 0; font-size: 36px; color: #ffffff; font-weight: 900; letter-spacing: 2px; text-shadow: 0 4px 6px rgba(0,0,0,0.5); }
+            .header p { color: #94a3b8; font-size: 16px; margin-top: 10px; }
+            .update-time { position: absolute; right: 0; bottom: 20px; font-size: 14px; color: #10b981; font-weight: bold; background: rgba(16,185,129,0.1); padding: 5px 10px; border-radius: 20px; }
+            .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+            .card { background-color: rgba(30, 41, 59, 0.8); backdrop-filter: blur(10px); border-radius: 12px; padding: 24px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5); }
+            .card-green { border-top: 5px solid #10b981; }
+            .card-blue { border-top: 5px solid #3b82f6; }
+            .card-orange { border-top: 5px solid #f59e0b; }
+            .card-red { border-top: 5px solid #ef4444; }
+            .card-title { font-size: 20px; font-weight: 900; margin-bottom: 20px; color: #fff; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #334155; padding-bottom: 12px; }
+            .list-item { display: flex; align-items: center; margin-bottom: 16px; }
+            .rank-badge { background-color: #0f172a; border: 1px solid #334155; color: #fbbf24; font-weight: 900; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-right: 15px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.5); }
+            .nick { flex: 1; font-size: 17px; font-weight: 700; color: #e2e8f0; }
+            .score { text-align: right; font-size: 20px; font-weight: 900; color: #fff; }
+            .progress-bar { height: 5px; border-radius: 3px; margin-top: 6px; width: 100%; }
+            .bg-green { background-color: #10b981; box-shadow: 0 0 8px #10b981; }
+            .bg-blue { background-color: #3b82f6; box-shadow: 0 0 8px #3b82f6; }
+            .bg-orange { background-color: #f59e0b; box-shadow: 0 0 8px #f59e0b; }
+            .bg-red { background-color: #ef4444; box-shadow: 0 0 8px #ef4444; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>🏟️ 아리송(야구) 실시간 MVP 랭킹</h1>
+                <p>오늘 하루 페넌트레이스 현황입니다. (24시간 자동 업데이트)</p>
+                <div class="update-time">⏳ 마지막 업데이트: 2026-06-06 20:38:05 KST</div>
+            </div>
+            <div class="grid">
+                <div class="card card-green">
+                    <div class="card-title">⚾ 홈런 타자 (게시글 작성)</div>
+                    
+            <div class="list-item">
+                <div class="rank-badge">1</div>
+                <div class="nick">BJ열심히할게요</div>
+                <div class="score">
+                    3
+                    <div class="progress-bar bg-green"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">2</div>
+                <div class="nick">디즐라이</div>
+                <div class="score">
+                    1
+                    <div class="progress-bar bg-green"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">3</div>
+                <div class="nick">좋버그</div>
+                <div class="score">
+                    1
+                    <div class="progress-bar bg-green"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">4</div>
+                <div class="nick">랑애</div>
+                <div class="score">
+                    1
+                    <div class="progress-bar bg-green"></div>
+                </div>
+            </div>
+            
+                </div>
+                <div class="card card-blue">
+                    <div class="card-title">📣 응원 단장 (댓글 작성)</div>
+                    
+            <div class="list-item">
+                <div class="rank-badge">1</div>
+                <div class="nick">디즐라이</div>
+                <div class="score">
+                    11
+                    <div class="progress-bar bg-blue"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">2</div>
+                <div class="nick">BJ열심히할게요</div>
+                <div class="score">
+                    5
+                    <div class="progress-bar bg-blue"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">3</div>
+                <div class="nick">아이콘오브더시즈</div>
+                <div class="score">
+                    3
+                    <div class="progress-bar bg-blue"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">4</div>
+                <div class="nick">좋버그</div>
+                <div class="score">
+                    2
+                    <div class="progress-bar bg-blue"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">5</div>
+                <div class="nick">닝닝바라기</div>
+                <div class="score">
+                    1
+                    <div class="progress-bar bg-blue"></div>
+                </div>
+            </div>
+            
+                </div>
+                <div class="card card-orange">
+                    <div class="card-title">🧤 골든 글러브 (추천 활동)</div>
+                    
+            <div class="list-item">
+                <div class="rank-badge">1</div>
+                <div class="nick">디즐라이</div>
+                <div class="score">
+                    5
+                    <div class="progress-bar bg-orange"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">2</div>
+                <div class="nick">닝닝바라기</div>
+                <div class="score">
+                    1
+                    <div class="progress-bar bg-orange"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">3</div>
+                <div class="nick">좋버그</div>
+                <div class="score">
+                    1
+                    <div class="progress-bar bg-orange"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">4</div>
+                <div class="nick">아이콘오브더시즈</div>
+                <div class="score">
+                    1
+                    <div class="progress-bar bg-orange"></div>
+                </div>
+            </div>
+            
+                </div>
+                <div class="card card-red">
+                    <div class="card-title">🏆 시즌 MVP (종합 활동 점수)</div>
+                    
+            <div class="list-item">
+                <div class="rank-badge">1</div>
+                <div class="nick">디즐라이</div>
+                <div class="score">
+                    130.5
+                    <div class="progress-bar bg-red"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">2</div>
+                <div class="nick">BJ열심히할게요</div>
+                <div class="score">
+                    110.0
+                    <div class="progress-bar bg-red"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">3</div>
+                <div class="nick">좋버그</div>
+                <div class="score">
+                    40.1
+                    <div class="progress-bar bg-red"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">4</div>
+                <div class="nick">아이콘오브더시즈</div>
+                <div class="score">
+                    30.1
+                    <div class="progress-bar bg-red"></div>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="rank-badge">5</div>
+                <div class="nick">랑애</div>
+                <div class="score">
+                    30.0
+                    <div class="progress-bar bg-red"></div>
+                </div>
+            </div>
+            
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
